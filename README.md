@@ -2,7 +2,9 @@
 
 ## send_crowdstrike_to_splunk_hec.py
 
-A script that is run in a cronjob to read from the CrowdStrike replicator directory (CrowdStrike data) and then send the logs to a load balancer. It would then evenly distribute the logs across Splunk indexers.
+A script that is run in a cronjob to read from the CrowdStrike replicator directory (CrowdStrike data) and then send the logs to a load balancer. It would then evenly distribute the logs across Splunk indexers. 
+
+I've created a Splunk TA to process the logs and make them CIM compliant: https://github.com/curtisrick/Splunk-TAs/tree/master/TA-crowdstrike_replicator/default
 
 ## swimlane - get_nsg_baseline.py
 
