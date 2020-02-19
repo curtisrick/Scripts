@@ -1,5 +1,9 @@
 # Scripts
 
+## send_crowdstrike_to_splunk_hec.py
+
+A script that is run in a cronjob to read from the CrowdStrike replicator directory (CrowdStrike data) and then send the logs to a load balancer. It would then evenly distribute the logs across Splunk indexers.
+
 ## swimlane - get_nsg_baseline.py
 
 Creates a baseline for all Network Security Groups in every Azure subscription to then later use to compare with the difference script.
